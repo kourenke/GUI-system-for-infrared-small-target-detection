@@ -6,7 +6,7 @@ To promote the development of infrared small target detection technology, we hav
 
 The relevant code will be made public later.
 
-In addition, we have also compiled a set of evaluation index libraries suitable for algorithms in this field, named BinarySOSMetrics. 
+In addition, we have also compiled a set of evaluation metrics libraries suitable for algorithms in this field, named BinarySOSMetrics. 
 
 The relevant code is published on https://github.com/BinarySOS/BinarySOSMetrics.
 

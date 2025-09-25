@@ -39,3 +39,5 @@
    *中国图象图形学报*, 2024, 29(09):2625-2649
 
 - 演示视频
+-- Data-driven algorithm GUI system.mp4
+-- Model-driven algorithm GUI system.mp4

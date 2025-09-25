@@ -1,25 +1,32 @@
-# GUI-system-for-infrared-small-target-detection
+## 红外小目标检测可视化系统
 
-Introduction
+一个开源的红外小目标检测可视化系统，集成了模型驱动和数据驱动两种方法，为研究者提供完整的算法验证和性能评估平台。
 
-To promote the development of infrared small target detection technology, we have designed a human-computer interaction system based on a set of model driven algorithms and data driven algorithms, aiming to provide a benchmark platform for researchers to learn, compare, and jointly maintain and update.
+📋 项目简介
+本项目包含两个独立的红外小目标检测系统：
 
-The relevant code will be made public later.
+🔧 模型驱动系统 (MATLAB)
 
-In addition, we have also compiled a set of evaluation metrics libraries suitable for algorithms in this field, named BinarySOSMetrics. 
+![fig1](./Model_driven_GUI.png)
 
-The relevant code is published on https://github.com/IRSTD/STD-EvalKit.
+基于经典图像处理算法的红外小目标检测
 
-The main features of BinarySOSMetrics include:
+收录了多种经典检测算法
 
-High Efficiency: Multi-threading.
+提供算法对比分析和可视化界面
 
-Device Friendly: All metrics support automatic batch accumulation.
+支持研究者扩展和补充新算法
 
-Unified API: All metrics provide the same API, Metric.update(labels, preds) complete the accumulation of batches， Metric.get() get metrics。
+🤖 数据驱动系统 (Python)
 
-Unified Computational: We use the same calculation logic and algorithms for the same type of metrics, ensuring consistency between results.
+![fig2](./Data_driven_GUI.png)
 
-Supports multiple data formats: Supports multiple input data formats, hwc/chw/bchw/bhwc/image path, more details in ./notebook/tutorial.ipynb
+基于深度学习的红外小目标分割
 
+支持模型评估和性能分析
 
+提供单帧图像推理、离线视频推理和在线实时推理
+
+模块化设计，易于模型扩展和替换
+
+具体使用请参考(https://github.com/kourenke/LW-IRSTNet/tree/main/IRSTD_streamlit)
